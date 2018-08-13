@@ -23,12 +23,23 @@ td, th {
     left: 0;
     background: rgba(0,0,0,0.8);
     z-index: 99999;
-    opacity:0;
+    opacity:0.0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
+/*
+## modal dialog visibility
+- For simplified example [@](https://www.w3schools.com/cssref/sel_target.asp)
+  - [modalDialog as target](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal)
+  - [menu](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_tab)
+- modalDialog class defined as transparent with no pointer events
+- the link `#createEmployee` activate `modalDialog:target` selector which has opaque style and activate pointer events
+- to 'close' modal click over `<a href="#" title="Close" className="close">X</a>` which "Navigate away from the dialog to hide it."
+*/
+
 
 .modalDialog:target {
     opacity:1;
