@@ -1,6 +1,5 @@
 *.iml
 .idea
-.mvn
 target
 bower_components
 node_modules
